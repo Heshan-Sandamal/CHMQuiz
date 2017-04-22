@@ -1,25 +1,25 @@
 package chmquiz.data;
 
 import java.io.BufferedReader;
-import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
-/**
- * Created by Dimuth on 4/22/2017.
- */
+
 public class QuestionReader {
 
     public static String read(){
         BufferedReader reader = null;
 
         try {
-            File file = new File("quiz.txt");
-            reader = new BufferedReader(new FileReader(file));
+            FileInputStream is = new FileInputStream("quiz.txt");
+            reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
 
             String line,k=null;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
+                System.out.println(line.charAt(0));
                 k=line;
             }
 

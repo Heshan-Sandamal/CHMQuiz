@@ -9,8 +9,6 @@ import chmquiz.data.QuestionReader;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.Timer;
-import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Platform;
@@ -48,7 +46,7 @@ public class FXMLDocumentController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        System.out.println("You clicked me!");
+        
         label.setText(QuestionReader.read());
 
         Thread t = new Thread(new Runnable() {
