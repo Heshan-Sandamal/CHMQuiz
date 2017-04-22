@@ -9,6 +9,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 /**
@@ -16,15 +17,20 @@ import javafx.stage.Stage;
  * @author Heshan Sandamal
  */
 public class CHMQuiz extends Application {
-    
+
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
-        Scene scene = new Scene(root);
-        
-        stage.setScene(scene);
-        stage.setMaximized(true);
+
+        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("FXMLDocument.fxml"));
+
+        Pane myPane = (Pane) myLoader.load();
+
+        FXMLDocumentController controller = (FXMLDocumentController) myLoader.getController();
+
+        controller.setPrevStage(stage);
+
+        Scene myScene = new Scene(myPane);
+        stage.setScene(myScene);
         stage.show();
     }
 
@@ -34,5 +40,5 @@ public class CHMQuiz extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }
