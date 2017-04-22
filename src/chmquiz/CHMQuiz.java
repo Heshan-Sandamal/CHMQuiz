@@ -31,6 +31,7 @@ public class CHMQuiz extends Application {
 
         Scene myScene = new Scene(myPane);
         stage.setScene(myScene);
+        stage.setMaximized(true);
         stage.show();
     }
 
