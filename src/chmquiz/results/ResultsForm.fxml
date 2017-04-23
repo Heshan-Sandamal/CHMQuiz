@@ -6,6 +6,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chmquiz.results.ResultsFormController">
-    
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chmquiz.results.ResultsFormController">
+  <children>
+    <Label fx:id="resultLabel" layoutX="272.0" layoutY="152.0" prefHeight="25.0" prefWidth="72.0" text="Label" />
+  </children>
 </AnchorPane>

@@ -17,10 +17,14 @@
               <content>
                 <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="86.00009999999747" prefWidth="-1.0">
                   <children>
-                    <RadioButton layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" />
-                    <RadioButton layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" />
-                    <RadioButton layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" />
-                    <RadioButton layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" />
+                    <RadioButton id="q1ans1ration" fx:id="q1ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                      <toggleGroup>
+                        <ToggleGroup fx:id="q1" />
+                      </toggleGroup>
+                    </RadioButton>
+                    <RadioButton fx:id="q1ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$q1" />
+                    <RadioButton fx:id="q1ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$q1" />
+                    <RadioButton fx:id="q1ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$q1" />
                     <Label id="l" fx:id="label" layoutY="14.0" prefHeight="29.0" prefWidth="315.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0">
                       <font>
                         <Font name="Iskoola Pota" size="12.0" />

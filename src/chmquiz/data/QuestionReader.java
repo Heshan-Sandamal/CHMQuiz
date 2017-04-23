@@ -20,6 +20,7 @@ public class QuestionReader {
                 System.out.println(line);
                 System.out.println(line.charAt(0));
                 k=line;
+                
             }
 
             return k;
