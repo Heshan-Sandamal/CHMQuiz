@@ -24,14 +24,13 @@ public class Data {
     public static ArrayList<String[]> optionsList=new ArrayList<>();
     public static ArrayList<Integer> answerList=new ArrayList<>();
 
-    public Data() {
-        
+    
+    
+    public static void read(){
         randomList= RandomListGen.generateList();
         questionsList = QuestionReader.read(randomList);
         optionsList = OptionReader.read(randomList);
         answerList = AnswerReader.read(randomList);
-        
-     
     }
     
     
@@ -61,6 +60,9 @@ public class Data {
     public static void setAnswerList(ArrayList<Integer> answerList) {
         Data.answerList = answerList;
     }
+    
+    
+    
     
     
     

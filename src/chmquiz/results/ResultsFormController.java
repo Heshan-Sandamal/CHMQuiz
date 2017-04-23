@@ -5,7 +5,9 @@
  */
 package chmquiz.results;
 
+
 import chmquiz.main.MainWindowController;
+import chmquiz.data.Data;
 import chmquiz.quiz.FXMLDocumentController;
 import java.net.URL;
 import java.util.ArrayList;
@@ -42,11 +44,13 @@ public class ResultsFormController implements Initializable {
                 
             }
         }
-        
         resultLabel.setText(str);
+
         
               
         
     }
+    
+    
 
 }
