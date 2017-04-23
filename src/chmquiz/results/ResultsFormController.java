@@ -5,9 +5,14 @@
  */
 package chmquiz.results;
 
+import chmquiz.FXMLDocumentController;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 
 /**
  * FXML Controller class
@@ -19,9 +24,23 @@ public class ResultsFormController implements Initializable {
     /**
      * Initializes the controller class.
      */
+    @FXML
+    private Label resultLabel;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
+
+        ArrayList<RadioButton> answrButtonList = FXMLDocumentController.getAnswrButtonList();
+
+        for (int j = 0; j < answrButtonList.size(); j++) {
+            if (answrButtonList.get(j).isSelected()) {
+                System.out.println("selected " + j);
+                resultLabel.setText("selected "+j);
+            }
+        }
+        
+              
+        
+    }
+
 }

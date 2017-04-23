@@ -8,6 +8,7 @@ package chmquiz;
 import chmquiz.data.QuestionReader;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -18,6 +19,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -34,6 +36,11 @@ public class FXMLDocumentController implements Initializable {
     private Label timeLabel;
 
     @FXML
+    private RadioButton q1ans1RadioButton, q1ans2RadioButton, q1ans3RadioButton, q1ans4RadioButton;
+
+    private static ArrayList<RadioButton> answrButtonList;
+
+    @FXML
     private void handleButtonAction(ActionEvent event) {
 
     }
@@ -44,9 +51,20 @@ public class FXMLDocumentController implements Initializable {
         this.prevStage = stage;
     }
 
+    public static ArrayList<RadioButton> getAnswrButtonList() {
+        return answrButtonList;
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
+
+        answrButtonList = new ArrayList<>();
+
+        answrButtonList.add(q1ans1RadioButton);
+        answrButtonList.add(q1ans2RadioButton);
+        answrButtonList.add(q1ans3RadioButton);
+        answrButtonList.add(q1ans4RadioButton);
+
         label.setText(QuestionReader.read());
 
         Thread t = new Thread(new Runnable() {
@@ -63,9 +81,6 @@ public class FXMLDocumentController implements Initializable {
                             //dynamicTimeProperty.set(sdf.format(new Date()));
                             timeLabel.setText("" + i--);
 
-                            if(i<10){
-                            }
-                            
                             if (i < 0) {
                                 run = false;
                                 Stage stage = new Stage();
@@ -80,9 +95,8 @@ public class FXMLDocumentController implements Initializable {
                                 stage.setScene(scene);
 
                                 prevStage.close();
-
                                 stage.show();
-
+                                
                             }
                         }
                     });
