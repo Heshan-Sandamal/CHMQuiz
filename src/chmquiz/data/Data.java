@@ -15,6 +15,6 @@ public class Data {
     
     public static ArrayList<String> questionsList=new ArrayList<>();
     public static ArrayList<String[]> optionsList=new ArrayList<>();
-    public static ArrayList<String> answerList=new ArrayList<>();
+    public static ArrayList<Integer> answerList=new ArrayList<>();
     
 }
