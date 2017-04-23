@@ -5,6 +5,7 @@
  */
 package chmquiz;
 
+import chmquiz.data.Data;
 import chmquiz.data.QuestionReader;
 import java.io.IOException;
 import java.net.URL;
@@ -65,7 +66,7 @@ public class FXMLDocumentController implements Initializable {
         answrButtonList.add(q1ans3RadioButton);
         answrButtonList.add(q1ans4RadioButton);
 
-        label.setText(QuestionReader.read());
+        
 
         Thread t = new Thread(new Runnable() {
             int i = 10;
@@ -115,6 +116,9 @@ public class FXMLDocumentController implements Initializable {
         t.setName("Runnable Time Updater");
         t.setDaemon(true);
         t.start();
+        
+   
+        
     }
 
 }
