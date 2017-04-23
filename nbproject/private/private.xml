@@ -5,6 +5,9 @@
         <group>
             <file>file:/D:/Projects/CHMQuiz/src/chmquiz/data/QuestionReader.java</file>
             <file>file:/D:/Projects/CHMQuiz/src/chmquiz/FXMLDocumentController.java</file>
+            <file>file:/D:/Projects/CHMQuiz/src/chmquiz/data/OptionReader.java</file>
+            <file>file:/D:/Projects/CHMQuiz/src/chmquiz/data/Data.java</file>
+            <file>file:/D:/Projects/CHMQuiz/src/chmquiz/data/AnswerReader.java</file>
             <file>file:/D:/Projects/CHMQuiz/src/chmquiz/CHMQuiz.java</file>
             <file>file:/D:/Projects/CHMQuiz/src/chmquiz/data/RandomListGen.java</file>
         </group>
