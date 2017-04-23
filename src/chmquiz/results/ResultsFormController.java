@@ -40,7 +40,7 @@ public class ResultsFormController implements Initializable {
             }
         }
         
-        Data.read();
+        
         
               
         

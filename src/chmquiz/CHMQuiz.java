@@ -5,6 +5,7 @@
  */
 package chmquiz;
 
+import chmquiz.data.Data;
 import chmquiz.start.StartFormController;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -60,6 +61,7 @@ public class CHMQuiz extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+        
     }
 
 }

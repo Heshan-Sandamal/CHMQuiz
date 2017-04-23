@@ -116,6 +116,10 @@ public class FXMLDocumentController implements Initializable {
         t.setName("Runnable Time Updater");
         t.setDaemon(true);
         t.start();
+        Data.read();
+        System.out.println(Data.getQuestionsList());
+        System.out.println(Data.getOptionsList());
+        System.out.println(Data.getAnswerList());
         
    
         
