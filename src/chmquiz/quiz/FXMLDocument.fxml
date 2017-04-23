@@ -30,14 +30,14 @@
                         <Font name="Iskoola Pota" size="12.0" />
                       </font>
                     </Label>
-                    <Label layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="61.0">
+                    <Label layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0">
                       <font>
-                        <Font size="19.0" />
+                        <Font size="16.0" />
                       </font>
                     </Label>
-                    <Label layoutY="5.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0">
+                    <Label layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0">
                       <font>
-                        <Font size="24.0" />
+                        <Font size="18.0" />
                       </font>
                     </Label>
                   </children>

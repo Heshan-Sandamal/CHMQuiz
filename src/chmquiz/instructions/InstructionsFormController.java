@@ -5,6 +5,7 @@
  */
 package chmquiz.instructions;
 
+import chmquiz.main.MainWindowController;
 import chmquiz.quiz.FXMLDocumentController;
 import chmquiz.start.StartFormController;
 import java.io.IOException;
@@ -17,6 +18,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -28,6 +31,10 @@ import javafx.stage.Stage;
 public class InstructionsFormController implements Initializable {
 
     Stage prevStage;
+    @FXML
+    private Label instructionsLabel;
+    @FXML
+    private Button startQuizButton;
 
     public void setPrevStage(Stage stage) {
         this.prevStage = stage;
@@ -37,26 +44,26 @@ public class InstructionsFormController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+       instructionsLabel.setText("dfd");
     }    
     
     @FXML
     private void startQuizButtonAction(ActionEvent event) {
-        Stage stage=new Stage();
-        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("/chmquiz/quiz/FXMLDocument.fxml"));
+       // Stage stage=new Stage();
+       FXMLLoader myLoader = new FXMLLoader(getClass().getResource("/chmquiz/main/MainWindow.fxml"));
         Pane myPane=null;
         try {
             myPane = (Pane) myLoader.load();
         } catch (IOException ex) {
             Logger.getLogger(StartFormController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        FXMLDocumentController controller = (FXMLDocumentController) myLoader.getController();
-        controller.setPrevStage(stage);
+        MainWindowController controller = (MainWindowController) myLoader.getController();
+        controller.setPrevStage(prevStage);
         Scene myScene = new Scene(myPane);
-        stage.setScene(myScene);
-        stage.setMaximized(true);
-        prevStage.close();
-        stage.show();
+        prevStage.setScene(myScene);
+        prevStage.setMaximized(true);
+        prevStage.setResizable(false);
+        prevStage.show();
     }
     
 }

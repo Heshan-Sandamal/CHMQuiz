@@ -5,6 +5,7 @@
  */
 package chmquiz.results;
 
+import chmquiz.main.MainWindowController;
 import chmquiz.quiz.FXMLDocumentController;
 import java.net.URL;
 import java.util.ArrayList;
@@ -30,14 +31,19 @@ public class ResultsFormController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
-        ArrayList<RadioButton> answrButtonList = FXMLDocumentController.getAnswrButtonList();
+        ArrayList<RadioButton> answerButtonList = MainWindowController.getAnswerButtonList();
 
-        for (int j = 0; j < answrButtonList.size(); j++) {
-            if (answrButtonList.get(j).isSelected()) {
-                System.out.println("selected " + j);
-                resultLabel.setText("selected "+j);
+        String str="";
+        //System.out.println("size of button list"+answerButtonList.size());
+        for (int j = 0; j < answerButtonList.size(); j++) {
+            //System.out.print(j);
+            if (answerButtonList.get(j).isSelected()) {
+                str+=j;
+                
             }
         }
+        
+        resultLabel.setText(str);
         
               
         

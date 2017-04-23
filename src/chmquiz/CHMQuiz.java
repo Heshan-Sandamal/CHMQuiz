@@ -5,6 +5,7 @@
  */
 package chmquiz;
 
+import chmquiz.data.Data;
 import chmquiz.start.StartFormController;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -25,6 +26,8 @@ public class CHMQuiz extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+        
+        new Data();
 
         FXMLLoader myLoader = new FXMLLoader(getClass().getResource("start/StartForm.fxml"));
         Pane myPane = (Pane) myLoader.load();

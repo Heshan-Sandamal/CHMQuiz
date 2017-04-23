@@ -9,7 +9,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="401.9609375" prefWidth="556.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chmquiz.instructions.InstructionsFormController">
   <children>
-    <Label layoutX="19.0" layoutY="14.0" prefHeight="27.0" prefWidth="433.0" text="Instructions">
+    <Label fx:id="instructionsLabel" layoutX="19.0" layoutY="14.0" prefHeight="27.0" prefWidth="433.0" text="Instructions">
       <font>
         <Font name="System Bold" size="18.0" />
       </font>
