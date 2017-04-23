@@ -12,8 +12,8 @@
     <Label layoutX="71.0" layoutY="100.0" prefWidth="68.0" text="Name:" />
     <Label layoutX="71.0" layoutY="161.0" prefWidth="68.0" text="Nic:" />
     <Label layoutX="71.0" layoutY="215.0" prefWidth="68.0" text="Language:" />
-    <TextField fx:id="nameText" layoutX="161.0" layoutY="100.0" prefWidth="370.0" />
-    <TextField fx:id="nicText" layoutX="161.0" layoutY="161.0" prefWidth="370.0" />
+    <TextField fx:id="nameText" layoutX="161.0" layoutY="100.0" prefWidth="370.0" promptText="name" />
+    <TextField fx:id="nicText" layoutX="161.0" layoutY="161.0" prefWidth="370.0" promptText="nic" text="" />
     <RadioButton fx:id="sinhalaRadioButton" layoutX="161.0" layoutY="215.0" mnemonicParsing="false" text="Sinhala">
       <toggleGroup>
         <ToggleGroup fx:id="languageGroup" />
