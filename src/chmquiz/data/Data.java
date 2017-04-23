@@ -13,8 +13,17 @@ import java.util.ArrayList;
  */
 public class Data {
     
+    public static String studentName;
+    public static String nicNo;
+    
+    public static int languageType=0;  //0-sinhala , 1-english
+    
+    //for current 15 questions
     public static ArrayList<String> questionsList=new ArrayList<>();
     public static ArrayList<String[]> optionsList=new ArrayList<>();
     public static ArrayList<Integer> answerList=new ArrayList<>();
+    
+    
+    
     
 }

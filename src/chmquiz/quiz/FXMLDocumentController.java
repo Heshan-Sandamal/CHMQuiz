@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package chmquiz;
+package chmquiz.quiz;
 
 import chmquiz.data.QuestionReader;
 import java.io.IOException;
@@ -59,7 +59,7 @@ public class FXMLDocumentController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 
         answrButtonList = new ArrayList<>();
-
+        
         answrButtonList.add(q1ans1RadioButton);
         answrButtonList.add(q1ans2RadioButton);
         answrButtonList.add(q1ans3RadioButton);
@@ -87,7 +87,7 @@ public class FXMLDocumentController implements Initializable {
                                 stage.setTitle("Results of Quiz");
                                 Pane myPane = null;
                                 try {
-                                    myPane = FXMLLoader.load(getClass().getResource("results/ResultsForm.fxml"));
+                                    myPane = FXMLLoader.load(getClass().getResource("/chmquiz/results/ResultsForm.fxml"));
                                 } catch (IOException ex) {
                                     Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
                                 }

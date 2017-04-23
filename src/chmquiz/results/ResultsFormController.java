@@ -5,7 +5,7 @@
  */
 package chmquiz.results;
 
-import chmquiz.FXMLDocumentController;
+import chmquiz.quiz.FXMLDocumentController;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;

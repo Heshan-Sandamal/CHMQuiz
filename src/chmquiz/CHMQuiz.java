@@ -5,10 +5,15 @@
  */
 package chmquiz;
 
+import chmquiz.start.StartFormController;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -21,18 +26,33 @@ public class CHMQuiz extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("FXMLDocument.fxml"));
-
+        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("start/StartForm.fxml"));
         Pane myPane = (Pane) myLoader.load();
-
-        FXMLDocumentController controller = (FXMLDocumentController) myLoader.getController();
-
+        StartFormController controller = (StartFormController) myLoader.getController();
         controller.setPrevStage(stage);
-
         Scene myScene = new Scene(myPane);
         stage.setScene(myScene);
-        stage.setMaximized(true);
+        stage.setResizable(false);
         stage.show();
+
+//        stage.setTitle("CHEMXO Knowledge Challenge 2017");
+//        Pane myPane = null;
+//        try {
+//            myPane = FXMLLoader.load(getClass().getResource("start/StartForm.fxml"));
+//        } catch (IOException ex) {
+//            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//        
+//         FXMLDocumentController controller = (FXMLDocumentController) myPane;
+//        controller.setPrevStage(stage);
+//
+//        Scene scene = new Scene(myPane);
+//        stage.setScene(scene);
+//        stage.setResizable(false);
+//        
+//
+//      //prevStage.close();
+//        stage.show();
     }
 
     /**

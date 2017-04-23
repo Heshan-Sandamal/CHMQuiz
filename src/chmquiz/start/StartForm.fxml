@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" pickOnBounds="true" prefHeight="343.0" prefWidth="556.0" snapToPixel="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chmquiz.start.StartFormController">
+  <children>
+    <Label layoutX="71.0" layoutY="100.0" prefWidth="68.0" text="Name:" />
+    <Label layoutX="71.0" layoutY="161.0" prefWidth="68.0" text="Nic:" />
+    <Label layoutX="71.0" layoutY="215.0" prefWidth="68.0" text="Language:" />
+    <TextField fx:id="nameText" layoutX="161.0" layoutY="100.0" prefWidth="370.0" />
+    <TextField fx:id="nicText" layoutX="161.0" layoutY="161.0" prefWidth="370.0" />
+    <RadioButton fx:id="sinhalaRadioButton" layoutX="161.0" layoutY="215.0" mnemonicParsing="false" text="Sinhala">
+      <toggleGroup>
+        <ToggleGroup fx:id="languageGroup" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="englishRadioButton" layoutX="289.0" layoutY="215.0" mnemonicParsing="false" text="English" toggleGroup="$languageGroup" />
+    <Label layoutX="23.0" layoutY="29.0" prefHeight="34.0" prefWidth="422.0" text="CHEMXO Knowledge Challenge 2017">
+      <font>
+        <Font size="25.0" />
+      </font>
+    </Label>
+    <Button fx:id="proceedButton" layoutX="419.0" layoutY="277.0" mnemonicParsing="false" onAction="#proceedButtonAction" prefHeight="34.0" prefWidth="112.0" text="Proceed" />
+  </children>
+</AnchorPane>
