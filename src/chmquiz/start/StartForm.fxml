@@ -26,5 +26,6 @@
       </font>
     </Label>
     <Button fx:id="proceedButton" layoutX="419.0" layoutY="277.0" mnemonicParsing="false" onAction="#proceedButtonAction" prefHeight="34.0" prefWidth="112.0" text="Proceed" />
+    <Label fx:id="errorLabel" layoutX="379.0" layoutY="252.0" prefWidth="152.0" text="Name &amp; Nic can't be empty" textFill="RED" />
   </children>
 </AnchorPane>

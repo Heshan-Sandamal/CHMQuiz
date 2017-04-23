@@ -27,7 +27,7 @@ public class CHMQuiz extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         
-        new Data();
+        Data.read();
 
         FXMLLoader myLoader = new FXMLLoader(getClass().getResource("start/StartForm.fxml"));
         Pane myPane = (Pane) myLoader.load();

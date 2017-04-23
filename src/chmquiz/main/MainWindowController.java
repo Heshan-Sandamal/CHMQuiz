@@ -97,7 +97,7 @@ public class MainWindowController implements Initializable {
 
     private void startTimer() {
         Thread t = new Thread(new Runnable() {
-            int i = 10;
+            int i = 3;
             boolean run = true;
 
             @Override
@@ -121,7 +121,7 @@ public class MainWindowController implements Initializable {
                                     Logger.getLogger(StartFormController.class.getName()).log(Level.SEVERE, null, ex);
                                 }
                                 ResultsFormController controller = (ResultsFormController) myLoader.getController();
-                                //controller.setPrevStage(prevStage);
+                                controller.setPrevStage(stage);
                                 Scene myScene = new Scene(myPane);
                                 stage.setScene(myScene);
                                 stage.show();
@@ -230,6 +230,7 @@ public class MainWindowController implements Initializable {
         answerButtonList.add(q15ans3RadioButton);
         answerButtonList.add(q15ans4RadioButton);
         
+
         for (int i = 0; i < 15; i++) {
             String[] opt = Data.optionsList.get(i);
             answerButtonList.get(i*4).setText(opt[0]);

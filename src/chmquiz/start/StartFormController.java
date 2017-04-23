@@ -18,6 +18,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
@@ -47,46 +48,51 @@ public class StartFormController implements Initializable {
     /**
      * Initializes the controller class.
      */
-    
-    
     Stage prevStage;
+    @FXML
+    private Label errorLabel;
 
     public void setPrevStage(Stage stage) {
         this.prevStage = stage;
     }
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         englishRadioButton.setSelected(true);
-    } 
-    
-    
-    
-    
+        errorLabel.setVisible(false);
+    }
+
     @FXML
     private void proceedButtonAction(ActionEvent event) {
-        
-        if(sinhalaRadioButton.isSelected()){
-            Data.languageType=0;
+
+        if (sinhalaRadioButton.isSelected()) {
+            Data.languageType = 0;
+        } else {
+            Data.languageType = 1;
+        }
+
+        Data.studentName = nameText.getText();
+        Data.nicNo = nicText.getText();
+
+        if (!Data.studentName.isEmpty() && !Data.nicNo.isEmpty()) {
+            //Stage stage=new Stage();
+            FXMLLoader myLoader = new FXMLLoader(getClass().getResource("/chmquiz/instructions/InstructionsForm.fxml"));
+            Pane myPane = null;
+            try {
+                myPane = (Pane) myLoader.load();
+            } catch (IOException ex) {
+                Logger.getLogger(StartFormController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            InstructionsFormController controller = (InstructionsFormController) myLoader.getController();
+            controller.setPrevStage(prevStage);
+            Scene myScene = new Scene(myPane);
+            prevStage.setScene(myScene);
+            prevStage.setResizable(false);
+            prevStage.show();
         }else{
-            Data.languageType=1;
+            errorLabel.setVisible(true);
         }
-        
-        //Stage stage=new Stage();
-        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("/chmquiz/instructions/InstructionsForm.fxml"));
-        Pane myPane=null;
-        try {
-            myPane = (Pane) myLoader.load();
-        } catch (IOException ex) {
-            Logger.getLogger(StartFormController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        InstructionsFormController controller = (InstructionsFormController) myLoader.getController();
-        controller.setPrevStage(prevStage);
-        Scene myScene = new Scene(myPane);
-        prevStage.setScene(myScene);
-        prevStage.setResizable(false);
-        prevStage.show();
-        
+
     }
-    
+
 }
