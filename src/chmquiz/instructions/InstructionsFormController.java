@@ -6,7 +6,6 @@
 package chmquiz.instructions;
 
 import chmquiz.main.MainWindowController;
-import chmquiz.quiz.FXMLDocumentController;
 import chmquiz.start.StartFormController;
 import java.io.IOException;
 import java.net.URL;

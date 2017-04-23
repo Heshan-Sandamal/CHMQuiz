@@ -6,7 +6,6 @@
 package chmquiz.main;
 
 import chmquiz.data.Data;
-import chmquiz.quiz.FXMLDocumentController;
 import chmquiz.results.ResultsFormController;
 import chmquiz.start.StartFormController;
 import java.io.IOException;
@@ -32,6 +31,8 @@ import javafx.stage.Stage;
  * @author Heshan Sandamal
  */
 public class MainWindowController implements Initializable {
+    
+    int time = 10;
 
     @FXML
     private Label timeLabel;
@@ -97,7 +98,7 @@ public class MainWindowController implements Initializable {
 
     private void startTimer() {
         Thread t = new Thread(new Runnable() {
-            int i = 3;
+            
             boolean run = true;
 
             @Override
@@ -108,9 +109,9 @@ public class MainWindowController implements Initializable {
                         @Override
                         public void run() {
                             //dynamicTimeProperty.set(sdf.format(new Date()));
-                            timeLabel.setText("" + i--);
+                            timeLabel.setText("" + time--);
 
-                            if (i < 0) {
+                            if (time < 0) {
                                 run = false;
                                 Stage stage=new Stage();
                                 FXMLLoader myLoader = new FXMLLoader(getClass().getResource("/chmquiz/results/ResultsForm.fxml"));

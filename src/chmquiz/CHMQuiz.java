@@ -27,6 +27,9 @@ public class CHMQuiz extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         
+        
+        setUserAgentStylesheet(STYLESHEET_MODENA);
+        
         Data.read();
 
         FXMLLoader myLoader = new FXMLLoader(getClass().getResource("start/StartForm.fxml"));
