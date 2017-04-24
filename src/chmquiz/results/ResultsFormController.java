@@ -7,6 +7,7 @@ package chmquiz.results;
 
 import chmquiz.main.MainWindowController;
 import chmquiz.data.Data;
+import chmquiz.data.LanguageConstants;
 import chmquiz.start.StartFormController;
 import java.io.IOException;
 import java.net.URL;
@@ -19,6 +20,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
@@ -32,11 +34,6 @@ import javafx.stage.Stage;
  */
 public class ResultsFormController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
-    @FXML
-    private Label resultLabel;
     @FXML
     private TextField nameTextField;
     @FXML
@@ -47,11 +44,39 @@ public class ResultsFormController implements Initializable {
     private Pane resultsPanel;
 
     Stage prevStage;
+    @FXML
+    private Label timeOverLabel;
+    @FXML
+    private Button viewResultsButton;
+    @FXML
+    private Label nicLabel;
+    @FXML
+    private Label marksLabel;
+    @FXML
+    private Label nameLabel;
+    @FXML
+    private Button restartButton;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
         resultsPanel.setVisible(false);
+
+        if (Data.languageType == 0) {
+            timeOverLabel.setText(LanguageConstants.timeOverSinhalaMessage);
+            viewResultsButton.setText(LanguageConstants.viewResultsSinhalaMessage);
+            nameLabel.setText(LanguageConstants.nameSinhala);
+            nicLabel.setText(LanguageConstants.nicSinhala);
+            marksLabel.setText(LanguageConstants.nicSinhala);
+            restartButton.setText(LanguageConstants.restartSinhala);
+        } else {
+            timeOverLabel.setText(LanguageConstants.timeOverEnglishMessage);
+            viewResultsButton.setText(LanguageConstants.viewResultsEnglishMessage);
+            nicLabel.setText(LanguageConstants.nicEnglish);
+            nameLabel.setText(LanguageConstants.nameEngish);
+            marksLabel.setText(LanguageConstants.marksEnglish);
+            restartButton.setText(LanguageConstants.restartEnglish);
+        }
 
     }
 
@@ -65,10 +90,10 @@ public class ResultsFormController implements Initializable {
         } catch (IOException ex) {
             Logger.getLogger(StartFormController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        Data.studentName=null;
-        Data.nicNo=null;
-        
+
+        Data.studentName = null;
+        Data.nicNo = null;
+
         StartFormController controller = (StartFormController) myLoader.getController();
         controller.setPrevStage(prevStage);
         Scene myScene = new Scene(myPane);
@@ -106,21 +131,24 @@ public class ResultsFormController implements Initializable {
         double total = 0;
 
         for (int i = 0; i < 4; i++) {
-            if (answerList[i] == Data.answerList.get(i)) {
+            if (answerList[i] == Data.answerList.get(i) - 1) {
                 total += 8;
             }
+            System.out.println(answerList[i]);
         }
 
         for (int i = 4; i < 10; i++) {
-            if (answerList[i] == Data.answerList.get(i)) {
+            if (answerList[i] == Data.answerList.get(i) - 1) {
                 total += 7;
             }
+            System.out.println(answerList[i]);
         }
 
         for (int i = 10; i < 15; i++) {
-            if (answerList[i] == Data.answerList.get(i)) {
-                total += 3.2;
+            if (answerList[i] == Data.answerList.get(i) - 1) {
+                total += 5.2;
             }
+            System.out.println(answerList[i]);
         }
 
         nameTextField.setText(Data.studentName);

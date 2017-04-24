@@ -6,6 +6,7 @@
 package chmquiz.start;
 
 import chmquiz.data.Data;
+import chmquiz.data.LanguageConstants;
 import chmquiz.instructions.InstructionsFormController;
 import java.io.IOException;
 import java.net.URL;
@@ -51,6 +52,12 @@ public class StartFormController implements Initializable {
     Stage prevStage;
     @FXML
     private Label errorLabel;
+    @FXML
+    private Label nameLabel;
+    @FXML
+    private Label nicLabel;
+    @FXML
+    private Label languageLabel;
 
     public void setPrevStage(Stage stage) {
         this.prevStage = stage;
@@ -67,8 +74,10 @@ public class StartFormController implements Initializable {
 
         if (sinhalaRadioButton.isSelected()) {
             Data.languageType = 0;
+            errorLabel.setText(LanguageConstants.errorMessageOnEmptyNicAndNameSinhala);
         } else {
             Data.languageType = 1;
+            errorLabel.setText(LanguageConstants.errorMessageOnEmptyNicAndNameEnglish);
         }
 
         Data.studentName = nameText.getText();
@@ -76,6 +85,9 @@ public class StartFormController implements Initializable {
 
         if (!Data.studentName.isEmpty() && !Data.nicNo.isEmpty()) {
             //Stage stage=new Stage();
+            
+            Data.read();
+            
             FXMLLoader myLoader = new FXMLLoader(getClass().getResource("/chmquiz/instructions/InstructionsForm.fxml"));
             Pane myPane = null;
             try {
@@ -90,9 +102,31 @@ public class StartFormController implements Initializable {
             prevStage.setResizable(false);
             prevStage.show();
         }else{
+            
             errorLabel.setVisible(true);
         }
 
+    }
+    
+    
+    @FXML
+    private void sinhalaRadioButtonAction(ActionEvent event) {
+        languageLabel.setText(LanguageConstants.languageSinhala);
+        nameLabel.setText(LanguageConstants.nameSinhala);
+        nicLabel.setText(LanguageConstants.nicSinhala);
+        proceedButton.setText(LanguageConstants.proceedSinhala);
+        nameText.setPromptText(LanguageConstants.nameSinhala);
+        nicText.setPromptText(LanguageConstants.nicSinhala);
+    }
+    
+     @FXML
+    private void englishRadioButtonAction(ActionEvent event) {
+        languageLabel.setText(LanguageConstants.languageEnglish);
+        nameLabel.setText(LanguageConstants.nameEngish);
+        nicLabel.setText(LanguageConstants.nicEnglish);
+        proceedButton.setText(LanguageConstants.proceedEnglish);
+        nameText.setPromptText(LanguageConstants.nameEngish);
+        nicText.setPromptText(LanguageConstants.nicEnglish);
     }
 
 }

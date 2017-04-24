@@ -28,9 +28,11 @@ public class CHMQuiz extends Application {
     public void start(Stage stage) throws Exception {
         
         
-        setUserAgentStylesheet(STYLESHEET_MODENA);
+        //setUserAgentStylesheet(STYLESHEET_MODENA);
         
-        Data.read();
+        for (int i = 0; i < Data.answerList.size(); i++) {
+            System.out.println(Data.answerList.get(i));
+        }
 
         FXMLLoader myLoader = new FXMLLoader(getClass().getResource("start/StartForm.fxml"));
         Pane myPane = (Pane) myLoader.load();

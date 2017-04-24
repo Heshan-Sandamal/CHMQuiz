@@ -5,6 +5,8 @@
  */
 package chmquiz.instructions;
 
+import chmquiz.data.Data;
+import chmquiz.data.LanguageConstants;
 import chmquiz.main.MainWindowController;
 import chmquiz.start.StartFormController;
 import java.io.IOException;
@@ -43,7 +45,14 @@ public class InstructionsFormController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-       instructionsLabel.setText("dfd");
+       
+       if(Data.languageType==0){
+           startQuizButton.setText(LanguageConstants.startQuizSinhalaButtonText);
+           instructionsLabel.setText(LanguageConstants.instructionHeaderSinhalaLableText);
+       }else{
+            startQuizButton.setText(LanguageConstants.startQuizEngishButtonText);
+            instructionsLabel.setText(LanguageConstants.instructionHeaderEnglishLableText);
+       }
     }    
     
     @FXML
@@ -61,7 +70,7 @@ public class InstructionsFormController implements Initializable {
         Scene myScene = new Scene(myPane);
         prevStage.setScene(myScene);
         prevStage.setMaximized(true);
-        prevStage.setResizable(false);
+        prevStage.setResizable(true);
         prevStage.show();
     }
     
