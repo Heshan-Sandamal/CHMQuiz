@@ -25,7 +25,7 @@ public class OptionReader {
         BufferedReader reader = null;
 
         try {
-            FileInputStream is = new FileInputStream("option.txt");
+            FileInputStream is = new FileInputStream("option"+String.valueOf(Data.languageType)+".txt");
             reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
 
             String line;

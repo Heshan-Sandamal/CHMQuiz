@@ -25,7 +25,7 @@ public class AnswerReader {
         BufferedReader reader = null;
 
         try {
-            FileInputStream is = new FileInputStream("answer.txt");
+            FileInputStream is = new FileInputStream("answer"+String.valueOf(Data.languageType)+".txt");
             reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
 
             String line;
