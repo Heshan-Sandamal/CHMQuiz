@@ -19,9 +19,9 @@ public class RandomListGen {
     
     
     public static ArrayList<Integer> generateList(){
-        final int[] int1 = new Random().ints(0, 60).distinct().limit(6).toArray();
-        final int[] int2 = new Random().ints(60, 100).distinct().limit(4).toArray();
-        final int[] int3 = new Random().ints(100, 150).distinct().limit(5).toArray();
+        final int[] int1 = new Random().ints(0,30).distinct().limit(6).toArray();
+        final int[] int2 = new Random().ints(31, 60).distinct().limit(4).toArray();
+        final int[] int3 = new Random().ints(61, 100).distinct().limit(5).toArray();
        
         indexList = addToArray(new ArrayList<Integer>(),int1);
         indexList = addToArray(indexList,int2);
