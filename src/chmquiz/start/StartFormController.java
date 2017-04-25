@@ -67,6 +67,7 @@ public class StartFormController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         englishRadioButton.setSelected(true);
         errorLabel.setVisible(false);
+        
     }
 
     @FXML

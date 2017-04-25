@@ -8,25 +8,25 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chmquiz.results.ResultsFormController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="565.9998779296875" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chmquiz.results.ResultsFormController">
   <children>
-    <Label fx:id="timeOverLabel" alignment="CENTER" layoutX="119.0" layoutY="31.0" prefHeight="46.0" prefWidth="395.0" styleClass="label-bright" text="Quiz is over">
+    <Label fx:id="timeOverLabel" alignment="CENTER" layoutX="0.0" layoutY="31.0" prefHeight="46.0" prefWidth="565.9998779296875" styleClass="label-bright" text="Quiz is over">
       <font>
         <Font size="34.0" />
       </font>
     </Label>
-    <Button fx:id="viewResultsButton" layoutX="239.0" layoutY="106.0" mnemonicParsing="false" onAction="#viewResultsButtonAction" prefHeight="25.0" prefWidth="155.0" text="View Resuts" />
-    <Pane fx:id="resultsPanel" layoutX="44.0" layoutY="159.0" prefHeight="200.0" prefWidth="525.0">
+    <Button fx:id="viewResultsButton" layoutX="206.0" layoutY="97.0" mnemonicParsing="false" onAction="#viewResultsButtonAction" prefHeight="25.0" prefWidth="155.0" text="View Resuts" />
+    <Pane fx:id="resultsPanel" layoutX="-10.0" layoutY="153.0" prefHeight="174.0" prefWidth="499.0">
       <children>
-        <Label id="resultLabel" fx:id="nameLabel" layoutX="48.0" layoutY="28.0" prefHeight="25.0" prefWidth="72.0" text="Name" />
-        <Label id="resultLabel" fx:id="nicLabel" layoutX="48.0" layoutY="75.0" prefHeight="25.0" prefWidth="72.0" text="NIC" />
-        <Label id="resultLabel" fx:id="marksLabel" layoutX="48.0" layoutY="124.0" prefHeight="25.0" prefWidth="72.0" text="Marks" />
-        <TextField fx:id="nameTextField" editable="false" layoutX="142.0" layoutY="28.0" prefWidth="341.0" />
-        <TextField fx:id="nicTextField" editable="false" layoutX="142.0" layoutY="78.0" prefWidth="341.0" />
-        <TextField fx:id="marksTextField" editable="false" layoutX="142.0" layoutY="127.0" prefWidth="341.0" />
+        <Label id="resultLabel" fx:id="nameLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="14.0" layoutY="28.0" prefHeight="25.0" prefWidth="141.9998779296875" text="Name" />
+        <Label id="resultLabel" fx:id="nicLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="14.0" layoutY="76.0" prefHeight="25.0" prefWidth="141.9998779296875" text="NIC" />
+        <Label id="resultLabel" fx:id="marksLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="14.0" layoutY="125.0" prefHeight="25.0" prefWidth="141.9998779296875" text="Marks" />
+        <TextField fx:id="nameTextField" editable="false" layoutX="188.0" layoutY="28.0" prefWidth="295.0" />
+        <TextField fx:id="nicTextField" editable="false" layoutX="188.0" layoutY="78.0" prefWidth="295.0" />
+        <TextField fx:id="marksTextField" editable="false" layoutX="188.0" layoutY="127.0" prefWidth="295.0" />
       </children>
     </Pane>
-    <Button fx:id="restartButton" layoutX="504.0" layoutY="357.0" mnemonicParsing="false" onAction="#restartButtonAction" text="Restart" />
+    <Button fx:id="restartButton" layoutX="434.0" layoutY="351.0" mnemonicParsing="false" onAction="#restartButtonAction" text="Restart" />
   </children>
   <stylesheets>
     <URL value="@../DarkTheme.css" />

@@ -9,6 +9,9 @@ import chmquiz.main.MainWindowController;
 import chmquiz.data.Data;
 import chmquiz.data.LanguageConstants;
 import chmquiz.start.StartFormController;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -61,13 +64,14 @@ public class ResultsFormController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 
         resultsPanel.setVisible(false);
+        //restartButton.setVisible(false);
 
         if (Data.languageType == 0) {
             timeOverLabel.setText(LanguageConstants.timeOverSinhalaMessage);
             viewResultsButton.setText(LanguageConstants.viewResultsSinhalaMessage);
             nameLabel.setText(LanguageConstants.nameSinhala);
             nicLabel.setText(LanguageConstants.nicSinhala);
-            marksLabel.setText(LanguageConstants.nicSinhala);
+            marksLabel.setText(LanguageConstants.marksSinhala);
             restartButton.setText(LanguageConstants.restartSinhala);
         } else {
             timeOverLabel.setText(LanguageConstants.timeOverEnglishMessage);
@@ -128,36 +132,57 @@ public class ResultsFormController implements Initializable {
             }
         }
 
-        double total = 0;
+        float total = 0;
 
         for (int i = 0; i < 4; i++) {
             if (answerList[i] == Data.answerList.get(i) - 1) {
                 total += 8;
             }
-            System.out.println(answerList[i]);
         }
 
         for (int i = 4; i < 10; i++) {
             if (answerList[i] == Data.answerList.get(i) - 1) {
                 total += 7;
             }
-            System.out.println(answerList[i]);
         }
 
         for (int i = 10; i < 15; i++) {
             if (answerList[i] == Data.answerList.get(i) - 1) {
                 total += 5.2;
             }
-            System.out.println(answerList[i]);
         }
 
         nameTextField.setText(Data.studentName);
         nicTextField.setText(Data.nicNo);
         marksTextField.setText(String.valueOf(total));
+
+        try {
+            writeToResultsFile(total);
+        } catch (IOException ex) {
+            Logger.getLogger(ResultsFormController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }
 
     public void setPrevStage(Stage prevStage) {
         this.prevStage = prevStage;
+    }
+
+    private void writeToResultsFile(float total) throws IOException {
+        // Create a new file, by default canWrite=true, readonly=false
+        File file = new File("results.txt");
+        if (!file.exists()) {
+            file.createNewFile();
+        }
+        FileWriter fr = new FileWriter(file,true);
+        fr.write(Data.studentName + " ---- ");
+        fr.write(Data.nicNo + " ---- ");
+        fr.write(String.valueOf(total) + "\n");
+
+        file.setReadOnly();
+
+        fr.close();
+
     }
 
 }
