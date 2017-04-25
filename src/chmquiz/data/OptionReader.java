@@ -34,7 +34,7 @@ public class OptionReader {
             while ((line = reader.readLine()) != null) {
                 
                 if(randomList.contains(index)){
-                    valueArray.add(line.split(","));
+                    valueArray.add(line.split("%"));
                 }
                 index++;
                 

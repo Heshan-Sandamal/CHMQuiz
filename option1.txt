@@ -1,200 +1,100 @@
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
-answer 1,answer 2,answer 3,answer 4
+NH3 %H2O %NaCl %NaOH
+Vetiverol%Eugenol%Camphor%Terigitol
+NaNO2 %NaNH2 %Na2C2O4 %Na2CO3
+All the Amino acids are optically active%All the amino acids in proteins are optically active%Some of the proteins can behave as Buffer solutions %None of the above are correct.
+Sr%Ba%Mg%Na
+Ca,P, H, O, F  %    Ca, C, P, H, O     %   Ca, K, F, H, O  %      Ca, Na, P, O, H
+Conc.HCl is necessary for the manufacturing of Bleaching powder%When added to K2Cr2O7 and Conc.H2SO4 mixture it turns the mixture into green color%It gives Cl2(g) with Conc.HCl%Its bleaching happens as a result of a redox reaction.
+Primary Amines %Proteins%Nitrosamine%Amino Acids
+Aliphatic C=C%Aromatic O-H%Aromatic CHO%Aliphatic CHO
+Dolomite%Graphite%Bauxite%Apatite
+Acid rains%Dissolved Oxygen percentage in water%Air pollution due to the emission of Hydrocarbons and CO2%Increasing of hardness of water
+25%10%5%3
+Polypropylene%Polystyrene%Poly(methyl acrylate)%Teflon
+Rutile %Hematite%Ilmenite%Pyrolusite
+V2O5/450 C/30 bar Pressure%V2O5/450 C/  1 bar Pressure %Pt/800 C/30 bar Pressure %Pt/450 C/30 bar Pressure
+1Ppm%5 ppm%10 ppm%50 ppm
+TiO2%ZnO2%Cr2O3%Cu2I2
+Poly(methyl acrylate)%Polystyrene%PVC%Bakelite
+SO2%SO3%NO2%All of above
+In the farm%In transportation%In packaging%In feeding the animals
+Increasing temperature%Adding chemicals%Using proper cleaning and sanitizing practices%Sterilization
+Collection and transportation%Storing%Insulating%Standardization
+Temperature%pH%Fat content%Colorant and pigment content
+Lewis Pasteur%Peter Durand%Nicolas Appert%Napoleon Bonaparte
+Drying%Salting%Pasteurization%Fermenting
+Quinolones%Penicillin%Sulfonamide%Glycopeptide
+Gases to alcohol%Sugar to alcohol%Sugar to base%Alcohol to base
+Lactobacillus%Yeast%Salmonella%Escherichia coli
+ISO%SLS%Ministry of Health%Water board
+Merox reactor%Caustic scrubber%Clay filter%Caustic settler
+Remove water from the fuel%Soften the treated solution%Minimize the corrosive inhabitance%Remove the particulate matter
+To prevent sulfuric acid production in combustion of fuel%To enhance  quality of fuel%To increase the calorific value of fuel%To decrease the fuel price
+After the merox treatment sulfur is totally remove from the fuel.%By this treatment high stable sulfur compounds are formed.%This is a biological treatment only.%Catalysts are not needed for this process.
+Soaps%Surfactants%Caustic%Water soluble salts
+Viscosity%Corrosive inhabitance%Pour point%Elasticity
+liquid in form only%Semi solid in form only%Solid ,liquid, gaseous or semi-solid in form%Solid in form only
+Saybolt Universal Second (SSU)%Redwood I Second (RW1)%Centistoke (cSt)- metric system%BTU
+Reduce the friction and ware%Remove foreign particles from the medium%Increase the energy content of the system%Dissipate the heat generated within the system
+Increase the life of the equipment%Reduce the power consumption%Enhance the resistivity%Minimize the corrosion
+Fabricating material%Relief pressure%Operating temperature%Flammability of  fluid
+Create a vacuum%Reduce the flow rate%Detect the fluid level%Produce saturated steam
+Easiness of installation and maintenance%Not having moving parts%No use of meal for fabrication%Less energy demand
+Ensure safety%Prevent overflowing%Regulate the system%Reduce temperature
+Having higher surface area to heat exchange%More compact%Low materials for fabrication%Low heat transfer
+Used to control the flow of steam to the cylinder of early double-acting steam engines.%Can be used as mechanically operated level detector.%Heavy duty toggle switches available for rugged applications.%This is a four way valve with equally round ports.
+This one of the most common type heat exchanger%Usually two fluids are used to exchange heat%Both fluids always flow same direction%Phase change can occur when heat transfer from one fluid to another
+Control the flow rate%Operating pressure%maintaining liquid level%Detecting AC current levels
+Evaporation%Distillation%Cyclone Separation%Crystallization
+Evaporation is faster than boiling.%Evaporation occurs at the surface while boiling occurs all over the liquid.%Evaporation does not require an external heat source.%Boiling point depends on the surrounding pressure while evaporation does not.
+Increases%Decreases%Does not change%Has no relationship
+Inter-molecular forces%Surface area%Temperature of the liquid%Liquid volume
+Humidification%Precipitation%Melting%Deposition directly from a gas
+Nucleation%Crystal growth%( i ) and ( ii) both%None of the above
+Solvent evaporation%Vacuum sublimation%Slow cooling%All of the above
+Density%Volatility%Solubility%Viscosity
+Steam distillation%Fractional distillation%Homogeneous distillation%Vacuum distillation
+Essential oil industry%Petroleum industry%Pharmaceuticals industry%All of the above
+Clip boards, hard covers for books%Pens, pencils%Pens, Papers%Pencils, clip boards
+Biologically%Manually%Chemically%Mechanically
+Cellulose%Lipid%Hemicellulose%Lignin
+Highly renewable%Requires high energy for manufacturing%Emits high CO2%Generally high in density
+product(→) plastic waste(→ ) pellets%plastic waste(→ ) product(→) pellets%plastic waste(→ ) pellets□(→) product%pellets(→) plastic waste(→) product`
+Hot press%Cold press%Two roll mill%Laminating press
+Fabric waste, gunny bag, waste plastic%Paper, glass, metals%Fabric waste, glass, metals%Waste plastic, paper, glass
+Extrusion moulder%Raspador machine%Internal mixer%Compression moulder
+Already used materials%Glass materials%Plastic materials only%Metals only
+CO2%CH4%H2S%NH3
+Gampaha%Kandy%Colombo%Kurunegala
+Meethotamulla, Sri Lanka%Lakhodair, Pakistan%Karadiyana, Sri Lanka%Deonar, India
+Marine Environment Protection Authority%Central Environmental Authority (CEA)%Mahaweli Authority of Sri Lanka%Sri Lanka Sustainable Energy Authority
+Vehicles%Industrial activities%Domestic activities%None of the above
+Lakvijaya power station%Sampur power station%Kelanitissa power station%Yugadanavi power station
+Wood%Oil%Coal%Natural gas
+Photochemical smog%Sulphur dioxide%Nitrogen dioxide%Dust particles
+SO2%H2S%CO%Hydrocarbons
+Oxygen%Hydrogen%Nitrogen%Carbon
+Alumina%Gypsum%Bauxite%Ammonium bicarbonate
+Butane%Naphtha%Kerosene%Diesel
+Tokyo summit%Vienna summit%Paris summit%New York summit
+Leonardo Dicaprio%Vin Diesel%Jason Stathom%Ben Affleck
+Mr. Patali Champika Ranawaka%Mr. Maithripala Sirisena%Mr. Anuradha Jayarathne%Mr. Udaya Gammanpila
+Decrease of pH level in ground water (pH level around 3-4)%Noise pollution%Toxic gas released to air%Solid waste generated by the factory released to bare land near by the Rathupaswala area
+A factory has been releasing waste water into the environment without being properly treated, which rendered the area’s ground water acidic%Oil leak was occurred and it was released in to nearby river%Toxic gas was released without treating%Effluent gas was released to ambient air without proper treatments
+extensive use of agro-chemicals, which polluted waterways%Use of cigarette & alcohol%Bad eating habits%Medication, like, diuretics ("water pills")
+Metalloid arsenic%E.coli bacteria%hydrogen cyanide%nicotine
+imported agro-chemicals with arsenic content had mixed with water and converted to calcium arsenate, & the cause of kidney diseases.%By long-term use of cigarettes, nicotine has been mixed with blood and weaken the functioning of the kidneys%E.coli bacteria were entered to the blood system through digestion system and attacked the kidneys%By over dosing Hydrogen cyanide containing medicines
+Cadmium%Arsenic%Mercury%Ribose & deoxyribose
+To divert 145 MCM (million cu.m) of water to South Eastern Sri Lanka in a bid to improve irrigation.%to build reservoirs in Puhulpola and Dyraaba, and a 4-km-long tunnel connecting the two reservoirs%290 gigawatt hours (GWh) of electricity is to be generated annually & supposed to connect to the national grid through the Badulla Grid Sub-station through a high-voltage transmission line%To install a power plant having a capacity of 70MW with an estimated average annual energy generation of 317GWh to harness the tributary Kukule Ganga of Kalu river, one of the five main rivers in Sri Lanka
+26km%4km%15km%16km
+houses collapsing%land surfaces cracking%wells and brooks drying up & and shortage of water%Depleting graphite depositions
+Norocholai, Puttalam%Kerawalapitiya%Sapugaskanda%Chunnakam
+Coal%Wind power%Solar power%Hydro power
+900 MW%550MW%500MW%160MW
+pH 6.5 – 9%pH 7-10%pH 4.5–7%pH 7 only
+70 dB(A)%60 dB(A)%85 dB(A)%50 dB(A)
+Control noise as far as possible by the outside of the source%By Vibration isolation%By Noise absorption%By Damping
+Meethotamulla%Sedawatte%Karadiyana%Attidiya
+Kelani River%Kalu river%Beira Lake%Labugama reservoir
+mesothelioma (cancer)%Dysthymia(depression)%nephrolithiasis (stones in the kidney)%Thalassemia
+amosite and crocidolite%Calcite and dolomite%Magnesite and monazite%Goethite and hematite
