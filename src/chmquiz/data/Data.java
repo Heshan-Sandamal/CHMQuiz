@@ -27,6 +27,7 @@ public class Data {
     
     
     public static void read(){
+       
         randomList= RandomListGen.generateList();
         questionsList = QuestionReader.read(randomList);
         optionsList = OptionReader.read(randomList);
