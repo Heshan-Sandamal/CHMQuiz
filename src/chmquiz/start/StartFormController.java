@@ -8,6 +8,7 @@ package chmquiz.start;
 import chmquiz.data.Data;
 import chmquiz.data.LanguageConstants;
 import chmquiz.instructions.InstructionsFormController;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -128,6 +129,17 @@ public class StartFormController implements Initializable {
         proceedButton.setText(LanguageConstants.proceedEnglish);
         nameText.setPromptText(LanguageConstants.nameEngish);
         nicText.setPromptText(LanguageConstants.nicEnglish);
+    }
+        
+    @FXML
+    private void nicTextKeyPressAction(javafx.scene.input.KeyEvent event) {
+        String string = nicText.getText();
+
+        if (string.length() > 10) {
+            nicText.setText(string.substring(0, 10));
+            nicText.positionCaret(string.length());
+        }
+        
     }
 
 }

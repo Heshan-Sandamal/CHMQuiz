@@ -14,7 +14,7 @@
     <Label fx:id="nicLabel" alignment="CENTER_RIGHT" layoutX="35.0" layoutY="201.0" prefWidth="147.0" text="Nic:" />
     <Label fx:id="languageLabel" alignment="CENTER_RIGHT" layoutX="35.0" layoutY="93.0" prefWidth="147.0" text="Language:" />
     <TextField fx:id="nameText" layoutX="224.0" layoutY="142.0" prefWidth="370.0" promptText="Name" />
-    <TextField fx:id="nicText" layoutX="224.0" layoutY="198.0" prefWidth="370.0" promptText="NIC" text="" />
+    <TextField fx:id="nicText" layoutX="224.0" layoutY="198.0" onKeyReleased="#nicTextKeyPressAction" prefWidth="370.0" promptText="NIC" text="" />
     <RadioButton fx:id="sinhalaRadioButton" layoutX="223.0" layoutY="92.0" mnemonicParsing="false" onAction="#sinhalaRadioButtonAction" style="" text="Sinhala">
       <toggleGroup>
         <ToggleGroup fx:id="languageGroup" />

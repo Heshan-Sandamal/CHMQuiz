@@ -6,6 +6,7 @@
 package chmquiz.main;
 
 import chmquiz.data.Data;
+import chmquiz.data.LanguageConstants;
 import chmquiz.results.ResultsFormController;
 import chmquiz.start.StartFormController;
 import java.io.IOException;
@@ -18,11 +19,16 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 /**
@@ -31,11 +37,14 @@ import javafx.stage.Stage;
  * @author Heshan Sandamal
  */
 public class MainWindowController implements Initializable {
-    
-    int time = 10;
+
+    int time = 12;
 
     @FXML
     private Label timeLabel;
+    
+    @FXML
+    private Label timeRemainingDescriptionLabel;
 
     @FXML
     private RadioButton q1ans1RadioButton, q1ans2RadioButton, q1ans3RadioButton, q1ans4RadioButton,
@@ -70,6 +79,12 @@ public class MainWindowController implements Initializable {
         this.setQuestions();
         this.setAnswers();
         this.startTimer();
+
+        if (Data.languageType == 0) {
+            timeRemainingDescriptionLabel.setText(LanguageConstants.timeRemainingSinhala);
+        } else {
+            timeRemainingDescriptionLabel.setText(LanguageConstants.timeRemainingEnglish);
+        }
     }
 
     Stage prevStage;
@@ -98,7 +113,7 @@ public class MainWindowController implements Initializable {
 
     private void startTimer() {
         Thread t = new Thread(new Runnable() {
-            
+
             boolean run = true;
 
             @Override
@@ -110,10 +125,15 @@ public class MainWindowController implements Initializable {
                         public void run() {
                             //dynamicTimeProperty.set(sdf.format(new Date()));
                             timeLabel.setText("" + time--);
+                            
+                            if(time==9){
+                                timeLabel.setTextFill(Color.RED);
+                                timeLabel.setBackground(new Background(new BackgroundFill(Color.WHITE, CornerRadii.EMPTY, Insets.EMPTY)));
+                            }
 
                             if (time < 0) {
                                 run = false;
-                                Stage stage=new Stage();
+                                Stage stage = new Stage();
                                 FXMLLoader myLoader = new FXMLLoader(getClass().getResource("/chmquiz/results/ResultsForm.fxml"));
                                 Pane myPane = null;
                                 try {
@@ -141,7 +161,6 @@ public class MainWindowController implements Initializable {
                 }
 
                 //System.out.println("end of loop");
-
             }
         });
         t.setName("Runnable Time Updater");
@@ -230,15 +249,14 @@ public class MainWindowController implements Initializable {
         answerButtonList.add(q15ans2RadioButton);
         answerButtonList.add(q15ans3RadioButton);
         answerButtonList.add(q15ans4RadioButton);
-        
 
         for (int i = 0; i < 15; i++) {
             String[] opt = Data.optionsList.get(i);
-            answerButtonList.get(i*4).setText(opt[0]);
-            answerButtonList.get(i*4+1).setText(opt[1]);
-            answerButtonList.get(i*4+2).setText(opt[2]);
-            answerButtonList.get(i*4+3).setText(opt[3]);
+            answerButtonList.get(i * 4).setText(opt[0]);
+            answerButtonList.get(i * 4 + 1).setText(opt[1]);
+            answerButtonList.get(i * 4 + 2).setText(opt[2]);
+            answerButtonList.get(i * 4 + 3).setText(opt[3]);
         }
-        
+
     }
 }

@@ -15,6 +15,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -64,7 +65,7 @@ public class ResultsFormController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 
         resultsPanel.setVisible(false);
-        //restartButton.setVisible(false);
+        restartButton.setVisible(false);
 
         if (Data.languageType == 0) {
             timeOverLabel.setText(LanguageConstants.timeOverSinhalaMessage);
@@ -81,6 +82,8 @@ public class ResultsFormController implements Initializable {
             marksLabel.setText(LanguageConstants.marksEnglish);
             restartButton.setText(LanguageConstants.restartEnglish);
         }
+        
+        calculateTotal();
 
     }
 
@@ -112,6 +115,37 @@ public class ResultsFormController implements Initializable {
     private void viewResultsButtonAction(ActionEvent event) {
 
         resultsPanel.setVisible(true);
+        
+
+    }
+
+    public void setPrevStage(Stage prevStage) {
+        this.prevStage = prevStage;
+    }
+
+    private void writeToResultsFile(float total) throws IOException {
+        // Create a new file, by default canWrite=true, readonly=false
+        
+        File file = new File("results.txt");
+        if (!file.exists()) {
+            file.createNewFile();
+        }
+        
+        file.setWritable(true);
+        
+        FileWriter fr = new FileWriter(file,true);
+        fr.write("\n"+new Date()+" ---- ");
+        fr.write(Data.studentName + " ---- ");
+        fr.write(Data.nicNo + " ---- ");
+        fr.write(String.valueOf(total));
+
+        file.setReadOnly();
+        
+        fr.close();
+
+    }
+
+    private void calculateTotal() {
         ArrayList<RadioButton> answerButtonList = MainWindowController.getAnswerButtonList();
 
         String str = "";
@@ -161,28 +195,6 @@ public class ResultsFormController implements Initializable {
         } catch (IOException ex) {
             Logger.getLogger(ResultsFormController.class.getName()).log(Level.SEVERE, null, ex);
         }
-
-    }
-
-    public void setPrevStage(Stage prevStage) {
-        this.prevStage = prevStage;
-    }
-
-    private void writeToResultsFile(float total) throws IOException {
-        // Create a new file, by default canWrite=true, readonly=false
-        File file = new File("results.txt");
-        if (!file.exists()) {
-            file.createNewFile();
-        }
-        FileWriter fr = new FileWriter(file,true);
-        fr.write(Data.studentName + " ---- ");
-        fr.write(Data.nicNo + " ---- ");
-        fr.write(String.valueOf(total) + "\n");
-
-        file.setReadOnly();
-
-        fr.close();
-
     }
 
 }

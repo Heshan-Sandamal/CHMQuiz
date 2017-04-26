@@ -37,6 +37,11 @@ package chmquiz.data;
     public static String proceedEnglish="Confirm";
     public static String marksEnglish="Marks";
     public static String restartEnglish="Restart";
+    
+    public static String timeRemainingEnglish="Time Remaining";
+    public static String timeRemainingSinhala="ඉතිරි කාලය";
+    
+    
 
     
     
