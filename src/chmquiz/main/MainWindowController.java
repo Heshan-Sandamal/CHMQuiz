@@ -145,6 +145,7 @@ public class MainWindowController implements Initializable {
                                 controller.setPrevStage(stage);
                                 Scene myScene = new Scene(myPane);
                                 stage.setScene(myScene);
+                                stage.setTitle("Results");
                                 stage.show();
                                 stage.setResizable(false);
                                 prevStage.close();

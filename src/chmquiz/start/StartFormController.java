@@ -102,6 +102,7 @@ public class StartFormController implements Initializable {
             Scene myScene = new Scene(myPane);
             prevStage.setScene(myScene);
             prevStage.setResizable(false);
+            prevStage.setTitle("Instructions");
             prevStage.show();
         }else{
             
