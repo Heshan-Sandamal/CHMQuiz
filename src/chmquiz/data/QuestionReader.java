@@ -29,8 +29,6 @@ public class QuestionReader {
             while ((line = reader.readLine()) != null) {
                 
                 if(randomList.contains(index)){
-                    System.out.println(index);
-                    System.out.println(line);
                     valueArray.add(line);
                 }
                 index++;

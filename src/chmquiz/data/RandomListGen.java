@@ -19,9 +19,23 @@ public class RandomListGen {
     
     
     public static ArrayList<Integer> generateList(){
-        final int[] int1 = new Random().ints(0,19).distinct().limit(6).toArray();
-        final int[] int2 = new Random().ints(20, 66).distinct().limit(4).toArray();
-        final int[] int3 = new Random().ints(67, 100).distinct().limit(5).toArray();
+        int lang = Data.languageType;
+        final int[] int1;
+        final int[] int2;
+        final int[] int3;
+        
+        if(lang==1){
+            int1 = new Random().ints(0,19).distinct().limit(6).toArray();
+            int2 = new Random().ints(20, 66).distinct().limit(4).toArray();
+            int3 = new Random().ints(67, 100).distinct().limit(5).toArray();
+            
+        }
+        else{
+            int1 = new Random().ints(0,19).distinct().limit(6).toArray();
+            int2 = new Random().ints(20, 60).distinct().limit(4).toArray();
+            int3 = new Random().ints(61, 93).distinct().limit(5).toArray();
+        }
+        
        
         indexList = addToArray(new ArrayList<Integer>(),int1);
         indexList = addToArray(indexList,int2);

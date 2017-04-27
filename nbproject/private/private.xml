@@ -3,32 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
             <file>file:/home/dimuth/Projects/CHMQuiz/src/chmquiz/main/MainWindowController.java</file>
             <file>file:/home/dimuth/Projects/CHMQuiz/src/chmquiz/data/OptionReader.java</file>
             <file>file:/home/dimuth/Projects/CHMQuiz/src/chmquiz/start/StartFormController.java</file>
             <file>file:/home/dimuth/Projects/CHMQuiz/src/chmquiz/data/QuestionReader.java</file>
+            <file>file:/home/dimuth/Projects/CHMQuiz/src/chmquiz/start/PasswordDialogController.java</file>
             <file>file:/home/dimuth/Projects/CHMQuiz/src/chmquiz/data/Data.java</file>
             <file>file:/home/dimuth/Projects/CHMQuiz/src/chmquiz/data/AnswerReader.java</file>
             <file>file:/home/dimuth/Projects/CHMQuiz/src/chmquiz/CHMQuiz.java</file>
             <file>file:/home/dimuth/Projects/CHMQuiz/src/chmquiz/data/RandomListGen.java</file>
-=======
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/src/chmquiz/instructions/InstructionsFormController.java</file>
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/src/chmquiz/CHMQuiz.java</file>
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/src/chmquiz/instructions/InstructionsForm.fxml</file>
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/src/chmquiz/data/OptionReader.java</file>
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/src/chmquiz/data/QuestionReader.java</file>
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/src/chmquiz/data/Data.java</file>
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/src/chmquiz/start/StartForm.fxml</file>
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/src/chmquiz/main/MainWindow.fxml</file>
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/src/chmquiz/start/StartFormController.java</file>
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/src/chmquiz/DarkTheme.css</file>
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/nbproject/build-impl.xml</file>
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/src/chmquiz/results/ResultsFormController.java</file>
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/src/chmquiz/data/LanguageConstants.java</file>
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/src/chmquiz/main/MainWindowController.java</file>
-            <file>file:/C:/Users/Heshan%20Sandamal/Documents/NetBeansProjects/CHMQuiz/src/chmquiz/data/RandomListGen.java</file>
->>>>>>> 267b9cb8295853fdd42a06e65b2552e3432c14d3
+            <file>file:/home/dimuth/Projects/CHMQuiz/src/chmquiz/start/PasswordDialog.fxml</file>
         </group>
     </open-files>
 </project-private>
