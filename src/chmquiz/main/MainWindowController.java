@@ -32,7 +32,7 @@ import javafx.stage.Stage;
  */
 public class MainWindowController implements Initializable {
     
-    int time = 10;
+    int time = 90;
 
     @FXML
     private Label timeLabel;
