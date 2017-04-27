@@ -20,7 +20,7 @@ public class QuestionReader {
         BufferedReader reader = null;
 
         try {
-            FileInputStream is = new FileInputStream("question"+String.valueOf(Data.languageType)+".txt");
+            FileInputStream is = new FileInputStream("C:\\Users\\public\\data\\question"+String.valueOf(Data.languageType)+".txt");
             reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
 
             String line;

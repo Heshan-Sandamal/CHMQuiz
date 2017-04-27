@@ -34,6 +34,8 @@ public class PasswordDialogController implements Initializable {
     private Button okButton;
     
     
+    
+    
     private final static String PASSWORD="chmquiz@uom";
     private Stage prevStage;
 

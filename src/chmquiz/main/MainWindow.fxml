@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="736.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chmquiz.main.MainWindowController">
+<AnchorPane id="AnchorPane" prefHeight="4400.0" prefWidth="736.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chmquiz.main.MainWindowController">
   <children>
     <Label layoutX="14.0" layoutY="45.0" prefHeight="29.0" prefWidth="345.0" styleClass="dptment-title-lable" text="Department of Chemical and Process Engineering" textFill="#006610" wrapText="false">
       <font>
@@ -16,7 +16,7 @@
       </font>
     </Label>
     <Label id="timeRemainingDescriptionLable" fx:id="timeRemainingDescriptionLabel" alignment="CENTER_RIGHT" layoutY="3.0" prefHeight="29.0" prefWidth="155.0" style="" text="Time Remaining:" AnchorPane.rightAnchor="25.0" />
-    <Label fx:id="timeLabel" alignment="CENTER_RIGHT" layoutY="28.0" prefHeight="46.0" prefWidth="48.0" styleClass="label-time" text="20:01" textAlignment="RIGHT" AnchorPane.rightAnchor="25.0">
+    <Label fx:id="timeLabel" alignment="CENTER_RIGHT" layoutY="28.0" prefHeight="46.0" prefWidth="65.0" styleClass="label-time" text="20:01" textAlignment="RIGHT" AnchorPane.rightAnchor="25.0">
       <font>
         <Font size="20.0" />
       </font>
@@ -26,9 +26,9 @@
         <Font size="25.0" />
       </font>
     </Label>
-    <ScrollPane fitToWidth="true" layoutY="91.0" prefHeight="650.0" prefWidth="736.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+    <ScrollPane fitToWidth="true" layoutY="91.0" prefHeight="650.0" prefWidth="736.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0">
       <content>
-        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="3979.0" prefWidth="734.0" style="-fx-border-color: white,transparent;" styleClass="background">
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="4027.0" prefWidth="734.0" style="-fx-border-color: white,transparent;" styleClass="background">
           <children>
             <TitledPane fx:id="q1TitledPane" animated="false" collapsible="false" expanded="true" layoutY="27.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="669.0" styleClass="background, background-titledPane" text="Question 1" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="29.0">
               <content>
@@ -289,6 +289,7 @@
                 </AnchorPane>
               </content>
             </TitledPane>
+            <Button id="Submit" fx:id="submitButton" layoutY="3967.0" mnemonicParsing="false" onAction="#submitButtonAction" prefHeight="37.0" prefWidth="171.0" text="Button" AnchorPane.rightAnchor="29.0" />
           </children>
         </AnchorPane>
       </content>

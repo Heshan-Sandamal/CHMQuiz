@@ -126,7 +126,8 @@ public class ResultsFormController implements Initializable {
     private void writeToResultsFile(float total) throws IOException {
         // Create a new file, by default canWrite=true, readonly=false
         
-        File file = new File("results.txt");
+        File file = new File("C:\\Users\\public\\data\\results.txt");
+        
         if (!file.exists()) {
             file.createNewFile();
         }
@@ -168,21 +169,21 @@ public class ResultsFormController implements Initializable {
 
         float total = 0;
 
-        for (int i = 0; i < 4; i++) {
-            if (answerList[i] == Data.answerList.get(i) - 1) {
-                total += 8;
-            }
-        }
-
-        for (int i = 4; i < 10; i++) {
-            if (answerList[i] == Data.answerList.get(i) - 1) {
+        for (int i = 0; i < 5; i++) {
+            if (answerList[i] == Data.answerList.get(i)) {
                 total += 7;
             }
         }
 
+        for (int i = 5; i < 10; i++) {
+            if (answerList[i] == Data.answerList.get(i)) {
+                total += 6;
+            }
+        }
+
         for (int i = 10; i < 15; i++) {
-            if (answerList[i] == Data.answerList.get(i) - 1) {
-                total += 5.2;
+            if (answerList[i] == Data.answerList.get(i)) {
+                total += 7;
             }
         }
 

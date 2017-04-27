@@ -41,6 +41,17 @@ package chmquiz.data;
     public static String timeRemainingEnglish="Time Remaining";
     public static String timeRemainingSinhala="ඉතිරි කාලය";
     
+    public static String sinhalaInstructions="ගැටළු 15කින් යුක්තය.\n" +
+"සියළුම ගැටළු වලට මිනිත්තු 4ක් ඇතුලත පිළිතුරු සැපයිය යුතුය.\n" +
+"අන්තර්ජාලය, ජංගම දුරකථනය භාවිතා කළ හැකිය.";
+    
+    public static String englishInstructions="The quiz consists of 15 questions\n" +
+"Answer all questions within 4 minutes\n" +
+"Usage of internet of mobile phones is allowed";
+    
+    
+    public static String submitEnglish="Submit";
+    public static String submitSinhala="අවසන්  කරන්න";
     
 
     

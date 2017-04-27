@@ -5,6 +5,7 @@
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
@@ -39,6 +40,11 @@
         <URL value="@../DarkTheme.css" />
       </stylesheets>
     </Label>
+    <ImageView fitHeight="116.65524291992188" fitWidth="99.56039811759189" layoutX="510.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../resources/cpe.png" />
+      </image>
+    </ImageView>
   </children>
   <stylesheets>
     <URL value="@../DarkTheme.css" />

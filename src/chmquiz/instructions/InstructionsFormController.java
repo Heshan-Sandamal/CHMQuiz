@@ -21,6 +21,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -36,6 +37,8 @@ public class InstructionsFormController implements Initializable {
     private Label instructionsLabel;
     @FXML
     private Button startQuizButton;
+    @FXML
+    private TextArea instructionText;
 
     public void setPrevStage(Stage stage) {
         this.prevStage = stage;
@@ -49,9 +52,11 @@ public class InstructionsFormController implements Initializable {
        if(Data.languageType==0){
            startQuizButton.setText(LanguageConstants.startQuizSinhalaButtonText);
            instructionsLabel.setText(LanguageConstants.instructionHeaderSinhalaLableText);
+           instructionText.setText(LanguageConstants.sinhalaInstructions);
        }else{
             startQuizButton.setText(LanguageConstants.startQuizEngishButtonText);
             instructionsLabel.setText(LanguageConstants.instructionHeaderEnglishLableText);
+            instructionText.setText(LanguageConstants.englishInstructions);
        }
     }    
     

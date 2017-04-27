@@ -7,15 +7,9 @@ package chmquiz;
 
 import chmquiz.data.Data;
 import chmquiz.start.PasswordDialogController;
-import chmquiz.start.StartFormController;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 

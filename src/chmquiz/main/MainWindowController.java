@@ -16,11 +16,13 @@ import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
@@ -38,11 +40,11 @@ import javafx.stage.Stage;
  */
 public class MainWindowController implements Initializable {
 
-    
-    int time = 20;
+    int time = 240;
 
+    @FXML
     private Label timeLabel;
-    
+
     @FXML
     private Label timeRemainingDescriptionLabel;
 
@@ -70,6 +72,9 @@ public class MainWindowController implements Initializable {
     @FXML
     private ToggleGroup x1;
 
+    @FXML
+    private Button submitButton;
+
     /**
      * Initializes the controller class.
      */
@@ -82,8 +87,10 @@ public class MainWindowController implements Initializable {
 
         if (Data.languageType == 0) {
             timeRemainingDescriptionLabel.setText(LanguageConstants.timeRemainingSinhala);
+            submitButton.setText(LanguageConstants.submitSinhala);
         } else {
             timeRemainingDescriptionLabel.setText(LanguageConstants.timeRemainingEnglish);
+            submitButton.setText(LanguageConstants.submitEnglish);
         }
     }
 
@@ -124,34 +131,21 @@ public class MainWindowController implements Initializable {
                         @Override
                         public void run() {
                             //dynamicTimeProperty.set(sdf.format(new Date()));
+
                             timeLabel.setText("" + time--);
-                            
-                            if(time==9){
+
+                            if (time == 9) {
                                 timeLabel.setTextFill(Color.RED);
                                 timeLabel.setBackground(new Background(new BackgroundFill(Color.WHITE, CornerRadii.EMPTY, Insets.EMPTY)));
                             }
 
                             if (time < 0) {
                                 run = false;
-                                Stage stage = new Stage();
-                                FXMLLoader myLoader = new FXMLLoader(getClass().getResource("/chmquiz/results/ResultsForm.fxml"));
-                                Pane myPane = null;
-                                try {
-                                    myPane = (Pane) myLoader.load();
-                                } catch (IOException ex) {
-                                    Logger.getLogger(StartFormController.class.getName()).log(Level.SEVERE, null, ex);
-                                }
-                                ResultsFormController controller = (ResultsFormController) myLoader.getController();
-                                controller.setPrevStage(stage);
-                                Scene myScene = new Scene(myPane);
-                                stage.setScene(myScene);
-                                stage.setTitle("Results");
-                                stage.show();
-                                stage.setResizable(false);
-                                prevStage.close();
+                                submitAction();
 
                             }
                         }
+
                     });
                     try {
                         Thread.sleep(1000);
@@ -259,5 +253,29 @@ public class MainWindowController implements Initializable {
             answerButtonList.get(i * 4 + 3).setText(opt[3]);
         }
 
+    }
+
+    @FXML
+    private void submitButtonAction(ActionEvent event) {
+        this.submitAction();
+    }
+
+    private void submitAction() {
+        Stage stage = new Stage();
+        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("/chmquiz/results/ResultsForm.fxml"));
+        Pane myPane = null;
+        try {
+            myPane = (Pane) myLoader.load();
+        } catch (IOException ex) {
+            Logger.getLogger(StartFormController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        ResultsFormController controller = (ResultsFormController) myLoader.getController();
+        controller.setPrevStage(stage);
+        Scene myScene = new Scene(myPane);
+        stage.setScene(myScene);
+        stage.setTitle("Results");
+        stage.show();
+        stage.setResizable(false);
+        prevStage.close();
     }
 }
