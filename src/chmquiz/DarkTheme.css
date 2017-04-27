@@ -1,5 +1,5 @@
 .background {
-    -fx-background-color: #1d1d1d;
+    -fx-background-color: #318e8c;
 }
 
 .background-titledPane {
@@ -29,6 +29,13 @@
     -fx-font-family: "Segoe UI Semibold";
     -fx-text-fill: white;
     -fx-opacity: 1;
+}
+
+.label-time{
+    -fx-font-size: 26pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1.2;
 }
 
 .label-header {

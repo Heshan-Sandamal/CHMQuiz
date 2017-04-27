@@ -6,6 +6,7 @@
 package chmquiz;
 
 import chmquiz.data.Data;
+import chmquiz.start.PasswordDialogController;
 import chmquiz.start.StartFormController;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -34,13 +35,14 @@ public class CHMQuiz extends Application {
             System.out.println(Data.answerList.get(i));
         }
 
-        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("start/StartForm.fxml"));
+        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("start/PasswordDialog.fxml"));
         Pane myPane = (Pane) myLoader.load();
-        StartFormController controller = (StartFormController) myLoader.getController();
+        PasswordDialogController controller = (PasswordDialogController) myLoader.getController();
         controller.setPrevStage(stage);
         Scene myScene = new Scene(myPane);
         stage.setScene(myScene);
         stage.setResizable(false);
+        stage.setTitle("Confirm Access");
         stage.show();
 
 //        stage.setTitle("CHEMXO Knowledge Challenge 2017");

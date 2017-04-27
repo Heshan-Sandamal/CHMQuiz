@@ -71,6 +71,7 @@ public class InstructionsFormController implements Initializable {
         prevStage.setScene(myScene);
         prevStage.setMaximized(true);
         prevStage.setResizable(true);
+        prevStage.setTitle("CHEMXO Knowledge Challenge 2017");
         prevStage.show();
     }
     

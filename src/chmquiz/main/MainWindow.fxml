@@ -15,8 +15,8 @@
         <Font size="12.0" />
       </font>
     </Label>
-    <Label layoutY="6.0" prefHeight="16.0" prefWidth="97.0" text="Time Remaining:" AnchorPane.rightAnchor="12.0" />
-    <Label fx:id="timeLabel" layoutY="28.0" prefHeight="46.0" prefWidth="55.0" styleClass="label-bright" text="20:01" textAlignment="RIGHT" AnchorPane.rightAnchor="25.0">
+    <Label id="timeRemainingDescriptionLable" fx:id="timeRemainingDescriptionLabel" alignment="CENTER_RIGHT" layoutY="3.0" prefHeight="29.0" prefWidth="155.0" style="" text="Time Remaining:" AnchorPane.rightAnchor="25.0" />
+    <Label fx:id="timeLabel" alignment="CENTER_RIGHT" layoutY="28.0" prefHeight="46.0" prefWidth="48.0" styleClass="label-time" text="20:01" textAlignment="RIGHT" AnchorPane.rightAnchor="25.0">
       <font>
         <Font size="20.0" />
       </font>
@@ -26,303 +26,265 @@
         <Font size="25.0" />
       </font>
     </Label>
-    <ScrollPane fitToWidth="true" layoutY="90.0" prefHeight="650.0" prefWidth="736.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+    <ScrollPane fitToWidth="true" layoutY="91.0" prefHeight="650.0" prefWidth="736.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
       <content>
-        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="1890.0" prefWidth="722.0" styleClass="background">
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="3979.0" prefWidth="734.0" style="-fx-border-color: white,transparent;" styleClass="background">
           <children>
-            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="27.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="669.0" styleClass="background, background-titledPane" text="Question 1" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="29.0">
+            <TitledPane fx:id="q1TitledPane" animated="false" collapsible="false" expanded="true" layoutY="27.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="669.0" styleClass="background, background-titledPane" text="Question 1" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="29.0">
               <content>
                 <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q1ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q1ans1RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x1" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton fx:id="q1ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x1" />
-                    <RadioButton fx:id="q1ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x1" />
-                    <RadioButton fx:id="q1ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x1" />
-                    <Label id="l" fx:id="q1Label" layoutY="12.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0">
+                    <RadioButton fx:id="q1ans2RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x1" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton fx:id="q1ans3RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x1" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton fx:id="q1ans4RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x1" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q1Label" layoutY="12.0" prefHeight="29.0" prefWidth="655.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5">
                       <font>
                         <Font size="14.0" fx:id="x3" />
                       </font>
                     </Label>
-                    <Label layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0">
-                      <font>
-                        <Font size="16.0" fx:id="x4" />
-                      </font>
-                    </Label>
-                    <Label layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0">
-                      <font>
-                        <Font size="18.0" fx:id="x5" />
-                      </font>
-                    </Label>
                   </children>
                 </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="148.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="669.0" styleClass="background-titledPane" text="Question 2" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="27.0">
+            <TitledPane fx:id="q2TitledPane" animated="false" collapsible="false" expanded="true" layoutY="288.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="681.0" styleClass="background-titledPane" text="Question 2" AnchorPane.leftAnchor="25.5" AnchorPane.rightAnchor="27.5">
               <content>
                 <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q2ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q2ans1RadioButton" mnemonicParsing="false" prefWidth="639.0" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x2" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton id="q1ans2RadioButton" fx:id="q2ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x2" />
-                    <RadioButton id="q1ans3RadioButton" fx:id="q2ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x2" />
-                    <RadioButton id="q1ans4RadioButton" fx:id="q2ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x2" />
-                    <Label id="l" fx:id="q2Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0" />
-                    <Label font="$x4" layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0" />
-                    <Label font="$x5" layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0" />
+                    <RadioButton id="q1ans2RadioButton" fx:id="q2ans2RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x2" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton id="q1ans3RadioButton" fx:id="q2ans3RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x2" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton id="q1ans4RadioButton" fx:id="q2ans4RadioButton" mnemonicParsing="false" prefWidth="639.0" text="RadioButton" toggleGroup="$x2" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q2Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="655.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5" />
                   </children>
                 </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="270.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="665.0" text="Question 3" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="29.0">
+            <TitledPane fx:id="q3TitedPane" animated="false" collapsible="false" expanded="true" layoutY="550.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="677.0" text="Question 3" AnchorPane.leftAnchor="28.5" AnchorPane.rightAnchor="28.5">
               <content>
-                <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
+                <AnchorPane id="Content" fx:id="q3TitledPane" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q3ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q3ans1RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x6" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton id="q1ans2RadioButton" fx:id="q3ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x6" />
-                    <RadioButton id="q1ans3RadioButton" fx:id="q3ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x6" />
-                    <RadioButton id="q1ans4RadioButton" fx:id="q3ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x6" />
-                    <Label id="l" fx:id="q3Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0" />
-                    <Label font="$x4" layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0" />
-                    <Label font="$x5" layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0" />
+                    <RadioButton id="q1ans2RadioButton" fx:id="q3ans2RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x6" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton id="q1ans3RadioButton" fx:id="q3ans3RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x6" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton id="q1ans4RadioButton" fx:id="q3ans4RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x6" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q3Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="647.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5" />
                   </children>
                 </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane id="q4Label" animated="false" collapsible="false" expanded="true" layoutY="390.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="665.0" text="Question 4" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="29.0">
+            <TitledPane id="q4Label" fx:id="q4TitledPane" animated="false" collapsible="false" expanded="true" layoutY="813.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="677.0" text="Question 4" AnchorPane.leftAnchor="26.5" AnchorPane.rightAnchor="30.5">
               <content>
-                <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
+                <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="178.0" prefWidth="673.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q4ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q4ans1RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x7" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton id="q1ans2RadioButton" fx:id="q4ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x7" />
-                    <RadioButton id="q1ans3RadioButton" fx:id="q4ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x7" />
-                    <RadioButton id="q1ans4RadioButton" fx:id="q4ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x7" />
-                    <Label id="l" fx:id="q4Label" font="$x3" layoutY="12.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0" />
-                    <Label font="$x4" layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0" />
-                    <Label font="$x5" layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0" />
+                    <RadioButton id="q1ans2RadioButton" fx:id="q4ans2RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x7" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton id="q1ans3RadioButton" fx:id="q4ans3RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x7" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton id="q1ans4RadioButton" fx:id="q4ans4RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x7" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q4Label" font="$x3" layoutY="12.0" prefHeight="29.0" prefWidth="647.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="11.5" AnchorPane.rightAnchor="10.5" />
                   </children>
                 </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="511.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="665.0" text="Question 5" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="27.0">
+            <TitledPane fx:id="q5TitledPane" animated="false" collapsible="false" expanded="true" layoutY="1078.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="665.0" text="Question 5" AnchorPane.leftAnchor="26.5" AnchorPane.rightAnchor="30.5">
               <content>
                 <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q5ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q5ans1RadioButton" mnemonicParsing="false" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x8" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton id="q1ans2RadioButton" fx:id="q5ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x8" />
-                    <RadioButton id="q1ans3RadioButton" fx:id="q5ans3RadioButton" layoutX="296.0" layoutY="57.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x8" />
-                    <RadioButton id="q1ans4RadioButton" fx:id="q5ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x8" />
-                    <Label id="l" fx:id="q5Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0" />
-                    <Label font="$x4" layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0" />
-                    <Label font="$x5" layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0" />
+                    <RadioButton id="q1ans2RadioButton" fx:id="q5ans2RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x8" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton id="q1ans3RadioButton" fx:id="q5ans3RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x8" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton id="q1ans4RadioButton" fx:id="q5ans4RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x8" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q5Label" font="$x3" prefHeight="29.0" prefWidth="633.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5" AnchorPane.topAnchor="12.0" />
                   </children>
                 </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="641.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="665.0" text="Question 6" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="25.0">
+            <TitledPane fx:id="q6TitledPane" animated="false" collapsible="false" expanded="true" layoutY="1342.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="665.0" text="Question 6" AnchorPane.leftAnchor="26.5" AnchorPane.rightAnchor="30.5">
               <content>
                 <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q6ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q6ans1RadioButton" mnemonicParsing="false" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x9" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton id="q1ans2RadioButton" fx:id="q6ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x9" />
-                    <RadioButton id="q1ans3RadioButton" fx:id="q6ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x9" />
-                    <RadioButton id="q1ans4RadioButton" fx:id="q6ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x9" />
-                    <Label id="l" fx:id="q6Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0" />
-                    <Label font="$x4" layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0" />
-                    <Label font="$x5" layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0" />
+                    <RadioButton id="q1ans2RadioButton" fx:id="q6ans2RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x9" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton id="q1ans3RadioButton" fx:id="q6ans3RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x9" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton id="q1ans4RadioButton" fx:id="q6ans4RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x9" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q6Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="639.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5" />
                   </children>
                 </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="764.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="665.0" text="Question 7" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="25.0">
+            <TitledPane fx:id="q7TitledPane" animated="false" collapsible="false" expanded="true" layoutY="1605.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="665.0" text="Question 7" AnchorPane.leftAnchor="25.5" AnchorPane.rightAnchor="31.5">
               <content>
                 <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q7ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q7ans1RadioButton" mnemonicParsing="false" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x10" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton id="q1ans2RadioButton" fx:id="q7ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x10" />
-                    <RadioButton id="q1ans3RadioButton" fx:id="q7ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x10" />
-                    <RadioButton id="q1ans4RadioButton" fx:id="q7ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x10" />
-                    <Label id="l" fx:id="q7Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0" />
-                    <Label font="$x4" layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0" />
-                    <Label font="$x5" layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0" />
+                    <RadioButton id="q1ans2RadioButton" fx:id="q7ans2RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x10" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton id="q1ans3RadioButton" fx:id="q7ans3RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x10" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton id="q1ans4RadioButton" fx:id="q7ans4RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x10" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q7Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5" />
                   </children>
                 </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="885.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="665.0" text="Question 8" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="25.0">
+            <TitledPane id="q8TitledPan" fx:id="q8TitledPane" animated="false" collapsible="false" expanded="true" layoutY="1867.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="665.0" text="Question 8" AnchorPane.leftAnchor="26.5" AnchorPane.rightAnchor="30.5">
               <content>
                 <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q8ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q8ans1RadioButton" mnemonicParsing="false" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x11" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton id="q1ans2RadioButton" fx:id="q8ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x11" />
-                    <RadioButton id="q1ans3RadioButton" fx:id="q8ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x11" />
-                    <RadioButton id="q1ans4RadioButton" fx:id="q8ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x11" />
-                    <Label id="l" fx:id="q8Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0" />
-                    <Label font="$x4" layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0" />
-                    <Label font="$x5" layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0" />
+                    <RadioButton id="q1ans2RadioButton" fx:id="q8ans2RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x11" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton id="q1ans3RadioButton" fx:id="q8ans3RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x11" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton id="q1ans4RadioButton" fx:id="q8ans4RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x11" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q8Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5" />
                   </children>
                 </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="1015.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="665.0" text="Question 9" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="23.0">
+            <TitledPane fx:id="q9TitledPane" animated="false" collapsible="false" expanded="true" layoutY="2128.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="665.0" text="Question 9" AnchorPane.leftAnchor="25.5" AnchorPane.rightAnchor="31.5">
               <content>
                 <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q9ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q9ans1RadioButton" mnemonicParsing="false" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x12" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton id="q1ans2RadioButton" fx:id="q9ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x12" />
-                    <RadioButton id="q1ans3RadioButton" fx:id="q9ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x12" />
-                    <RadioButton id="q1ans4RadioButton" fx:id="q9ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x12" />
-                    <Label id="l" fx:id="q9Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0" />
-                    <Label font="$x4" layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0" />
-                    <Label font="$x5" layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0" />
+                    <RadioButton id="q1ans2RadioButton" fx:id="q9ans2RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x12" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton id="q1ans3RadioButton" fx:id="q9ans3RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x12" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton id="q1ans4RadioButton" fx:id="q9ans4RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x12" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q9Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5" />
                   </children>
                 </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="1138.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="665.0" text="Question 10" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="23.0">
+            <TitledPane fx:id="q10TitleledPane" animated="false" collapsible="false" expanded="true" layoutY="2392.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="665.0" text="Question 10" AnchorPane.leftAnchor="26.5" AnchorPane.rightAnchor="30.5">
               <content>
                 <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q10ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q10ans1RadioButton" mnemonicParsing="false" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x13" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton id="q1ans2RadioButton" fx:id="q10ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x13" />
-                    <RadioButton id="q1ans3RadioButton" fx:id="q10ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x13" />
-                    <RadioButton id="q1ans4RadioButton" fx:id="q10ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x13" />
-                    <Label id="l" fx:id="q10Label" font="$x3" layoutY="10.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0" />
-                    <Label font="$x4" layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0" />
-                    <Label font="$x5" layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0" />
+                    <RadioButton id="q1ans2RadioButton" fx:id="q10ans2RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x13" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton id="q1ans3RadioButton" fx:id="q10ans3RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x13" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton id="q1ans4RadioButton" fx:id="q10ans4RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x13" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q10Label" font="$x3" layoutY="10.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5" />
                   </children>
                 </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="1259.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="665.0" text="Question 11" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="21.0">
+            <TitledPane fx:id="q11TitledPane" animated="false" collapsible="false" expanded="true" layoutY="2656.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="665.0" text="Question 11" AnchorPane.leftAnchor="28.5" AnchorPane.rightAnchor="28.5">
               <content>
                 <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q11ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q11ans1RadioButton" mnemonicParsing="false" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x14" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton id="q1ans2RadioButton" fx:id="q11ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x14" />
-                    <RadioButton id="q1ans3RadioButton" fx:id="q11ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x14" />
-                    <RadioButton id="q1ans4RadioButton" fx:id="q11ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x14" />
-                    <Label id="l" fx:id="q11Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0" />
-                    <Label font="$x4" layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0" />
-                    <Label font="$x5" layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0" />
+                    <RadioButton id="q1ans2RadioButton" fx:id="q11ans2RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x14" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton id="q1ans3RadioButton" fx:id="q11ans3RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x14" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton id="q1ans4RadioButton" fx:id="q11ans4RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x14" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q11Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5" />
                   </children>
                 </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="1380.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="665.0" text="Question 12" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="21.0">
+            <TitledPane fx:id="q12TitledPane" animated="false" collapsible="false" expanded="true" layoutY="2921.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="665.0" text="Question 12" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="27.0">
               <content>
                 <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q12ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q12ans1RadioButton" mnemonicParsing="false" text="RadioButton" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x15" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton id="q1ans2RadioButton" fx:id="q12ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x15" />
-                    <RadioButton id="q1ans3RadioButton" fx:id="q12ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x15" />
-                    <RadioButton id="q1ans4RadioButton" fx:id="q12ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x15" />
-                    <Label id="l" fx:id="q12Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0" />
-                    <Label font="$x4" layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0" />
-                    <Label font="$x5" layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0" />
+                    <RadioButton id="q1ans2RadioButton" fx:id="q12ans2RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x15" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton id="q1ans3RadioButton" fx:id="q12ans3RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x15" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton id="q1ans4RadioButton" fx:id="q12ans4RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x15" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q12Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5" />
                   </children>
                 </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="1510.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="665.0" text="Question 13" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="19.0">
+            <TitledPane fx:id="q13TitledPane" animated="false" collapsible="false" expanded="true" layoutY="3185.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="665.0" text="Question 13" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="24.0">
               <content>
                 <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q13ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q13ans1RadioButton" mnemonicParsing="false" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x16" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton id="q1ans2RadioButton" fx:id="q13ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x16" />
-                    <RadioButton id="q1ans3RadioButton" fx:id="q13ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x16" />
-                    <RadioButton id="q1ans4RadioButton" fx:id="q13ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x16" />
-                    <Label id="l" fx:id="q13Label" font="$x3" layoutY="10.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0" />
-                    <Label font="$x4" layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0" />
-                    <Label font="$x5" layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0" />
+                    <RadioButton id="q1ans2RadioButton" fx:id="q13ans2RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x16" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton id="q1ans3RadioButton" fx:id="q13ans3RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x16" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton id="q1ans4RadioButton" fx:id="q13ans4RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x16" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q13Label" font="$x3" layoutY="10.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5" />
                   </children>
                 </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="1633.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="665.0" text="Question 14" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="19.0">
+            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="3449.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="665.0" text="Question 14" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="22.0">
               <content>
                 <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q14ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q14ans1RadioButton" mnemonicParsing="false" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x17" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton id="q1ans2RadioButton" fx:id="q14ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x17" />
-                    <RadioButton id="q1ans3RadioButton" fx:id="q14ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x17" />
-                    <RadioButton id="q1ans4RadioButton" fx:id="q14ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x17" />
-                    <Label id="l" fx:id="q14Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0" />
-                    <Label font="$x4" layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0" />
-                    <Label font="$x5" layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0" />
+                    <RadioButton id="q1ans2RadioButton" fx:id="q14ans2RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x17" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton id="q1ans3RadioButton" fx:id="q14ans3RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x17" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton id="q1ans4RadioButton" fx:id="q14ans4RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x17" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q14Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5" />
                   </children>
                 </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="1763.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="665.0" text="Question 15" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="19.0">
+            <TitledPane animated="false" collapsible="false" expanded="true" layoutY="3711.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="665.0" text="Question 15" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="24.0">
               <content>
                 <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
                   <children>
-                    <RadioButton id="q1ans1ration" fx:id="q15ans1RadioButton" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton">
+                    <RadioButton id="q1ans1ration" fx:id="q15ans1RadioButton" mnemonicParsing="false" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
                       <toggleGroup>
                         <ToggleGroup fx:id="x18" />
                       </toggleGroup>
                     </RadioButton>
-                    <RadioButton id="q1ans2RadioButton" fx:id="q15ans2RadioButton" layoutX="158.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x18" />
-                    <RadioButton id="q1ans3RadioButton" fx:id="q15ans3RadioButton" layoutX="296.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x18" />
-                    <RadioButton id="q1ans4RadioButton" fx:id="q15ans4RadioButton" layoutX="416.0" layoutY="56.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$x18" />
-                    <Label id="l" fx:id="q15Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="151.0" />
-                    <Label font="$x4" layoutY="8.0" prefWidth="64.0" text="Marks:" AnchorPane.rightAnchor="48.0" />
-                    <Label font="$x5" layoutY="7.0" prefWidth="34.0" text="1" AnchorPane.rightAnchor="14.0" />
+                    <RadioButton id="q1ans2RadioButton" fx:id="q15ans2RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x18" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                    <RadioButton id="q1ans3RadioButton" fx:id="q15ans3RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x18" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                    <RadioButton id="q1ans4RadioButton" fx:id="q15ans4RadioButton" mnemonicParsing="false" text="RadioButton" toggleGroup="$x18" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                    <Label id="l" fx:id="q15Label" font="$x3" layoutY="11.0" prefHeight="29.0" prefWidth="499.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5" />
                   </children>
                 </AnchorPane>
               </content>

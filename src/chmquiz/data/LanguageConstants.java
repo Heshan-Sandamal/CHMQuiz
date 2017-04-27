@@ -24,19 +24,24 @@ package chmquiz.data;
     public static String viewResultsSinhalaMessage="ප්‍රතිඵල බලන්න";
     
     
-    public static String languageSinhala="bbbb";
-    public static String nameSinhala="ප්‍රතිඵල බලන්න";
-    public static String nicSinhala="ප්‍රතිඵල බලන්න";
-    public static String proceedSinhala="ප්‍රතිඵල බලන්න";
-    public static String marksSinhala="ප්‍රතිඵල බලන්න";
-    public static String restartSinhala="ප්‍රතිඵල බලන්න";
+    public static String languageSinhala="භාෂාව";
+    public static String nameSinhala="නම";
+    public static String nicSinhala="හැදුනුම්පත්  අංකය";
+    public static String proceedSinhala="ස්ථිර කරන්න";
+    public static String marksSinhala="ලකුණු";
+    public static String restartSinhala="නැවත පටන් ගන්න";
     
     public static String languageEnglish="Language";
     public static String nameEngish="Name";
     public static String nicEnglish="NIC";
-    public static String proceedEnglish="Proceed";
+    public static String proceedEnglish="Confirm";
     public static String marksEnglish="Marks";
     public static String restartEnglish="Restart";
+    
+    public static String timeRemainingEnglish="Time Remaining";
+    public static String timeRemainingSinhala="ඉතිරි කාලය";
+    
+    
 
     
     
