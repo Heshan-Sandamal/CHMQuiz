@@ -37,15 +37,10 @@ import javafx.stage.Stage;
  * @author Heshan Sandamal
  */
 public class MainWindowController implements Initializable {
-<<<<<<< HEAD
+
     
-    int time = 90;
-=======
+    int time = 20;
 
-    int time = 12;
->>>>>>> 267b9cb8295853fdd42a06e65b2552e3432c14d3
-
-    @FXML
     private Label timeLabel;
     
     @FXML
