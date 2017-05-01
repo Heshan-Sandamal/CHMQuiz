@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minWidth="667.0" prefHeight="283.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chmquiz.dynamicPanel.PaneController">
+  <children>
+    <ScrollPane id="ScrollPane" fitToWidth="true" layoutY="21.0" prefHeight="238.0" prefViewportHeight="235.0" prefViewportWidth="667.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <content>
+        <TitledPane id="q1TitledPane" animated="false" collapsible="false" expanded="true" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="667.0" styleClass="background, background-titledPane" text="Question 1">
+          <content>
+            <AnchorPane id="Content" disable="false" minHeight="0.0" minWidth="-1.0" prefHeight="87.0" prefWidth="676.0" styleClass="background-titledPane">
+              <children>
+                <RadioButton id="q1ans1ration" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
+                  <toggleGroup>
+                    <ToggleGroup fx:id="x1" />
+                  </toggleGroup>
+                </RadioButton>
+                <RadioButton id="q1ans2RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x1" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="91.0" />
+                <RadioButton id="q1ans3RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x1" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="127.0" />
+                <RadioButton id="q1ans4RadioButton" mnemonicParsing="false" prefWidth="633.0" text="RadioButton" toggleGroup="$x1" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="162.0" />
+                <Label id="l" layoutY="12.0" prefHeight="29.0" prefWidth="655.0" text="සද්ස්ද්ෆ්" AnchorPane.leftAnchor="10.5" AnchorPane.rightAnchor="11.5">
+                  <font>
+                    <Font size="14.0" />
+                  </font>
+                </Label>
+              </children>
+            </AnchorPane>
+          </content>
+        </TitledPane>
+      </content>
+    </ScrollPane>
+  </children>
+</AnchorPane>
